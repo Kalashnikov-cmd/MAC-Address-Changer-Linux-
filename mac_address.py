@@ -16,3 +16,4 @@ mac = input("Enter new MAC Address:")
 subprocess.call("sudo ifconfig " + interface + " down", shell=True)
 subprocess.call("sudo ifconfig " + interface + " hw ether " + mac, shell=True)
 subprocess.call("sudo ifconfig " + interface + " up", shell=True)
+
